@@ -1,14 +1,11 @@
 <?php
 include "db.php";
 
-$id = $_GET['id'];
+$code = $_GET['code'];
 
-$sql = "UPDATE bookings 
-        SET status='done' 
-        WHERE id='$id'";
-
+$sql = "UPDATE bookings SET status='done' WHERE booking_code='$code'";
 $conn->query($sql);
 
-header("Location: index.php");
+header("Location: check.php?code=".$code);
 exit();
 ?>

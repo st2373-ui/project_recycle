@@ -68,6 +68,10 @@
 
         <button type="submit">บันทึกข้อมูล</button>
         <a href="list.php" class="view-btn">ดูรายการจองทั้งหมด</a>
+        <hr>
+<a href="check.php">
+    <button type="button">ตรวจสอบ / จัดการคิว</button>
+</a>
 
     </form>
 </div>
